@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.section-1 {
+  background-image: url(./assets/galaxybg.png);
+}
+.reason-section {
+  background-color: rgb(9, 126, 207);
+  background-image: url(./assets/about.png);
+  background-size: cover;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
+}
+.tilted-container::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  inset: 0;
+  background-color: rgb(9, 126, 207);
+  background-image: url(./assets/dot-2.png), url(./assets/dots.png);
+  background-size: contain;
+  background-blend-mode: color-burn;
+  background-position: left, right;
+  background-repeat: no-repeat;
+}
+.image {
+  background-image: url(./assets/phone2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: bottom;
+}
+.image::before {
+  content: "";
+  transform: translate(-80px, -20px);
+  z-index: 0;
+  background-image: url(./assets/phone1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  display: inline-block;
+  position: absolute;
+  background-position: bottom;
+  inset: 0;
+}
+.video-component {
+  background-color: rgb(9, 126, 207);
+  background-image: url(./assets/bg-2.png);
+}
+.support-section {
+  background-color: rgb(9, 126, 207);
+  background-image: url(./assets/support-shade.png);
+}
